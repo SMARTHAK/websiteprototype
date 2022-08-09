@@ -1,0 +1,260 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+/* navigation  */
+
+.logo {
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+ul {
+   
+  display: flex;
+}
+.list {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  background-color: #efefef;
+  z-index: 4;
+  width: 100%;
+}
+.fill {
+  width: 100%;
+
+  height: 50px;
+}
+.navigation {
+  text-decoration: none;
+  color: rgb(119, 119, 119);
+  font-size: 30px;
+  padding: 0px 46px;
+}
+@media screen and (max-width:892px) {
+.navigation{
+  font-size: 25px;
+  padding: 0px 15px;
+}
+}
+
+.navigation:hover {
+  color: rgb(0, 0, 0);
+}
+.navbar {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 10px;
+}
+/* section ritle */
+
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.about {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box {
+  width: 23%;
+  height: 313px;
+  /* border: 2px solid red; */
+  margin: 19px 9px;
+  box-shadow: 0.1px 0.1px 5px 1px #bfbebe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  opacity: 0.9;
+}
+.main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 642px;
+  font-size: 29px;
+  color: rgb(0, 0, 0);
+}
+h1 {
+  animation-name: smeet;
+  animation-duration: 1s;
+  transition: ease-out;
+  animation-delay: 0.1s;
+  transition-property: font-size;
+}
+@keyframes smeet {
+  0% {
+    font-size: 82px;
+  }
+  50% {
+    font-size: 70px;
+  }
+  100% {
+    font-size: 82px;
+  }
+}
+header {
+  display: flex;
+  background-color: #efefef;
+}
+
+.para2,
+.abouth {
+  display: flex;
+  flex-direction: column;
+}
+
+.handlesinp {
+  margin: 0px;
+  padding: 0px;
+  width: 15px;
+}
+
+.boxlast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 10px;
+}
+.about {
+  padding: 50px;
+  padding-bottom: 5px;
+  margin: 10px 10px;
+}
+.para2 {
+  margin-top: 10px;
+}
+p {
+  padding: 22px 55px 0px 55px;
+  padding-top: 10px;
+}
+.title {
+  margin: 0px;
+  padding: 60px;
+}
+.div-footer,
+.lastf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lastf {
+  margin: 10px;
+  font-size: 10px;
+}
+.para {
+  width: 567px;
+}
+#spiderman {
+  object-fit: cover;
+}
+.main {
+  display: flex;
+  object-fit: cover;
+}
+#box1::after {
+  content: "";
+  background: url("images/background/spiderman.jpg") no-repeat center
+    center/cover;
+  position: absolute;
+  width: 23%;
+  height: 53%;
+  z-index: -1;
+  opacity: 0.5;
+  height: 313px;
+  border-radius: 8px;
+  color: white;
+  transition-property: all;
+  transition-duration: 1s;
+  transition: ease-out;
+}
+.spiderman:hover,.ironman:hover,.thor:hover,.doc:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 5px rgb(157, 157, 157);
+}
+#box2::after {
+  content: "";
+  background: url("images/background/ironman.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 23%;
+  height: 53%;
+  z-index: -1;
+  opacity: 0.5;
+  height: 313px;
+  border-radius: 8px;
+  color: white;
+}
+#box3::after {
+  content: "";
+  background: url("images/background/thor.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 23%;
+  height: 53%;
+  z-index: -1;
+  opacity: 0.5;
+  height: 313px;
+  border-radius: 8px;
+  color: white;
+}
+#box4::after {
+  content: "";
+  background: url("images/background/doctor\ strange.jpg") no-repeat center
+    center/cover;
+  position: absolute;
+  width: 23%;
+  height: 53%;
+  z-index: -1;
+  opacity: 0.5;
+  height: 313px;
+  border-radius: 8px;
+  color: white;
+}
+.footera,
+.handlesinp {
+  color: black;
+  font-size: 13px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.text h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 82px;
+}
+.box:hover {
+}
+.spiderman,.ironman,.thor,.doc{
+  color: white;
+  text-decoration: none;
+}

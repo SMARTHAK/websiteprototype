@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: #107f83;
+      height: 100vh; 
+      background-image: url("images/v870-mynt-20_1_2.jpg");
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      height: 50px;
+
+      width: 100vw;
+      background-color: rgb(0, 153, 163);
+      display: flex;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .name {
+      color: white;
+      padding: 14px;
+      margin-left: 100px;
+    }
+
+    .nav {
+      padding: 10px;
+      color: rgb(3, 3, 3);
+    }
+
+    nav {
+      height: 46px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .email {
+      margin-left: 171px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login {
+      margin-left: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container-login {
+      margin: 21px 70px 50px 70px;
+      height: 100px;
+    }
+
+    footer {
+      margin-top: 61vh;
+      width: 100%;
+      height: 100px;
+      background-color: rgb(0, 60, 255);
+    }
+
+    .email-a {
+      color: white;
+    }
+
+    .login-a {
+      color: white;
+    }
+
+    .foot-a {
+      color: white;
+    }
+
+    .container-4 {
+      background-image: url("images/WhatsApp\ Image\ 2021-10-12\ at\ 5.24.54\ PM.jpeg" )  ;
+      margin: 32px -1px 61px 0px;
+      background-color: #ffffff;
+      border: 1px solid rgb(190, 190, 187);
+      padding: 20px;
+      height: 342px;
+      font-size: 25px;
+      font-weight: bold;
+      width: 200px;
+      
+    }
+    .::after{
+      content: "";
+      background-image: url("images/seamless-pattern-with-healthcare-medicine-and-pharmacy-icons-and-symbols-medical-background-doodle-T84XXF.jpg");
+      
+      position: absolute;
+      
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      opacity: 0.5;
+      margin-bottom: 100px;
+
+    }
+    
+    .login-container {
+      padding: 20px;
+      height: 50px;
+      display: flex;
+    }
+
+    .email-container {
+      height: 50px;
+      display: flex;
+      padding: 20px;
+    }
+
+    .password-container {
+      height: 50px;
+      display: flex;
+      padding: 20px;
+    }
+
+    input {
+      height: 20px;
+      width: 257px;
+
+      margin-left: 10px;
+    }
+
+    select {
+      height: 30px;
+      width: 257px;
+      /* margin: auto; */
+      margin-left: 10px;
+    }
+
+    .btn {
+      padding: 8px;
+      width: 89px;
+      background-color: #0095ff;
+      border: 1px solid black;
+      border-radius: 20px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 16px;
+    }
+
+    .box {
+      border: 1px solid black;
+      display: flex ;
+      flex-direction: row;
+      display: inline;
+    }
+
+    .box1,
+    .box2 {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      height: 100px;
+      width: 100px;
+      
+    }
+    th{text-align: left;
+    padding: 20px;}
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="">
+      <p class="name">MedShare</p>
+    </a>
+    <nav class="navigation">
+      <ul>
+        <li class="list" id=""><a href="" class="nav" id="">Home </a></li>
+        <li class="list" id=""><a href="" class="nav" id="">About</a></li>
+        <li class="list" id=""><a href="" class="nav" id="">Contact</a></li>
+        <li class="list" id=""><a href="" class="nav" id="">Donate</a></li>
+        <li class="list" id="">
+          <a href="" class="nav" id="">My Donations</a>
+        </li>
+        <li class="list" id="">
+          <a href="" class="nav" id="">Benefited Persons</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="email">
+      <a href="" class="email-a">karkaresmeet09@gmail.com</a>
+    </div>
+    <div class="login"><a href="" class="login-a">Login</a></div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+  <div class="container-login">
+    <form action="">
+      <h1 class="login-h1">Log In</h1>
+      <div class="container-4">
+        <!--  <div class="login-container">
+           Login Type 
+          <p class="loginp">Login type:</p>
+          <select name="login type" id="login type">
+            <option value="Donor">Donator</option>
+            <option value="NGO">NGO</option>
+            <option value="Transporter">Transporter</option>
+            <option value="Pharmacist">Pharmacist</option>
+            <option value="admin">admin</option>
+          </select>
+        </div>
+
+        <div class="email-container">
+           Email 
+          <p class="emailp">Email:</p>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="password-container">
+          Password 
+          <p class="passp">Password:</p>
+          <input type="password" name="password" id="password" />
+        </div>
+        <button type="submit" class="btn">Log In</button> 
+      </div> -->
+
+
+
+
+<div class="bob"><table>
+  <tr>
+  <th> Login Type </th> 
+<td><select name="login type" id="login type">
+  <option value="Donor">Donator</option>
+  <option value="NGO">NGO</option>
+  <option value="Transporter">Transporter</option>
+  <option value="Pharmacist">Pharmacist</option>
+  <option value="admin">admin</option>
+</select></td></tr>
+<tr></tr>
+<th>Email</th>
+<td><input type="email" name="email" id="email"></td></tr>
+<tr>
+  <th>Password</th>
+  <td><input type="password" name="password" id="password" /></td>
+</tr> 
+<tr>
+  <th><button type="submit" class="btn">Log In</button> </th>
+</tr></table></div>
+        
+    </div>
+        
+      </div>
+    </form>
+  </div>
+  <footer>
+    <a href="" class="foot-a">1</a>
+    <a href="" class="foot-a">2</a>
+    <a href="" class="foot-a">3</a>
+    <a href="" class="foot-a">4</a>
+    <a href="" class="foot-a">5</a>
+    <a href="" class="foot-a">6</a>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.navbar{
+  
+    margin-top: 19px;
+}
+.navigation{  font-size: 15px;
+    padding: 0px 9px;
+
+}
+.text h1{
+
+    font-size: 25px;
+    padding: 0px 15px;
+}
+.title {
+    margin: 0px;
+    padding: 17px;
+}
+.para {
+    width: 294px;
+    font-size: 15px;
+}
+header {
+    display: flex;
+        position: fixed;}
+      
+        #box1::after {  width: 20%;
+          }
+      
+          #box2::after {
+            width: 20%;
+          }
+          #box3::after {
+            width: 20%;
+          }
+          #box4::after {width: 20%;
+          }  

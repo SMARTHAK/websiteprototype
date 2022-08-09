@@ -1,0 +1,96 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    border: 1px solid red;
+    display: flex;
+    height: 68px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+}
+.fill{
+    height: 68px;
+    width: 100%;
+    background: url("");
+}
+.logo-image{
+    height: 18%;
+    height: 96%;
+}
+.nav-ul{
+    border: 1px solid red;
+
+    display: flex;
+}
+.nav-list{
+    border: 1px solid red;
+    color: white;
+ 
+    list-style: none;
+    padding: 0px 42px;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 77%;
+    float: right;
+}
+#Search{
+    width: 371px;
+    height: 29px;
+    padding: 11px;
+    margin: 0px 24px;
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Quicksand', sans-serif;
+
+}
+ 
+ .searchbar{
+    border: 1px solid rgb(18, 99, 88);
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+ .primary-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    border: 1px solid rgb(128, 0, 255);
+
+ }
+ .heading{
+    font-size: 40px;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 26px 2px;
+    font-family: 'Quicksand', sans-serif;
+ }
+ .p-1{
+    font-size: 26px;
+    border: 1px solid red;
+    margin-bottom: 27px;
+}
+ 
+tr, th,td{
+    padding: 16px;
+    border:1px solid black;
+    border-collapse: collapse;
+}
+table{
+    margin: auto;
+    width:90%;
+
+
+}
+.table{
+}
