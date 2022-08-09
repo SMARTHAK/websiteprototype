@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSK|HOME|</title>
+    <link rel="stylesheet" href="home-style.css" />
+
+    <!-- social media icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+   
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap');
+      * {
+        margin: 0;
+        padding: 0%;
+        font-family: 'Montserrat', sans-serif;
+      }
+      body {
+        border: 1px solid rgb(64, 14, 242)(0, 0, 0)(0, 0, 0);
+        background-color: rgb(252, 252, 252);
+      }
+
+      a {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 21px;
+        color: black;
+      }
+      nav {
+        border: 1px solid red;
+        color: #000;
+        width: 100%;
+        height: 65px;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+      }
+
+      .back {
+        width: 100%;
+        height: 100%;
+      }
+
+      .back::before {
+        content: "";
+        background: url("/background/default.jpg") no-repeat center center/cover;
+        background-color: black;
+        position: absolute;
+        /* top: -57px; */
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /* opacity: 0.8; */
+      }
+      header {
+        border: 1px solid red;
+        position: absolute;
+
+height: 336px;width: 634px;
+    margin: 62px 0px 0px 96px;
+
+      }
+
+      #name {    padding: 31px;
+        border: 1px solid red;
+      }
+      .name {
+        border: 1px solid red;
+      }
+      #name-p {    margin: -7px 0px 0px 17px;
+        padding-left: 17px;
+
+
+        border: 1px solid red;
+      }
+      .info {
+        padding: 38px;
+        border: 1px solid red;
+      }
+
+      #hearme {    width: 86px;
+        margin-left: 38px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: 1px solid red;
+        border-radius: 4px;
+      }
+      .navigation{font-family: 'Roboto', sans-serif;
+        margin: 0px -459px 0px 36px;
+      }
+
+      .fa {
+        padding: 2px;
+    font-size: 30px;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 13px;
+    border-radius: 21%;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .navigation:hover {
+        text-decoration:underline rgb(232, 232, 1);
+        opacity: 0.7;
+        font-size: 23px;
+  
+  transition: font-size 0.1s;
+}
+      
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <p class="back"></p> -->
+    <nav class="navMenu">
+      <a class="navigation" href="/">HOME </a>
+      <a class="navigation" href="/about">ABOUT </a>
+      <a class="navigation" href="/mywork">MY WORK </a>
+      <a class="navigation" href="/contact">CONTACT</a>
+      <div class="dot"></div>
+
+      <!-- <section class="handle">
+        <img class="handle-img" src="/image/logo/insta" alt="insta">
+        <img class="handle-img"src="/image/logo/facebook.png" alt="facebook">
+        <img class="handle-img"src="/image/logo/twitter.png" alt="twitter">
+        <img class="handle-img"src="/image/logo/google.png" alt="google">
+      </section> -->
+
+      <section id="icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+
+      </section>
+    </nav>
+
+    <header>
+      <h1 class="name">
+        <a href="" id="name" class="btn-shine" target="_blank"
+          >Smeet_Shreenath_Karkare</a
+        >
+
+        <!-- <a href="" id="name">Smeet_Shreenath_Karkare</a> -->
+      </h1>
+
+      <p id="name-p">student making websites</p>
+      <p class="info">
+        I am student of computer engineering,who is making websites for fun.If
+        you like my website's design,i would like too share my experience with
+        you
+      </p>
+      <button id="hearme">Hear Me</button>
+    </header>
+
+    <!-- <footer></footer> -->
+    
+  </body>
+</html>
