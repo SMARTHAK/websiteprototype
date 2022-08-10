@@ -1,0 +1,8 @@
+.mb-5, .my-5 {
+    margin-bottom: 0rem!important;
+}
+ 
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 100%;padding-right: 0px;
+    padding-left: 0px;
+}

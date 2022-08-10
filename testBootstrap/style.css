@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0%;
+/* background-color: black; */
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1346px;
+}
+
+.containdiv{
+    margin: 0px 0px 0px 18px;
+    max-width: 1316px;
+}
+.text-head{
+
+}
+
+.photos{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    margin: 17px 0px 0px 3px;
+    width: 393px;
+    border-radius: 5px;
+  
+  
+}
+ #dropdownMenuClickableInside{
+    border: 0px;
+ }
+.photos:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+    transition: 0.5s;
+}
