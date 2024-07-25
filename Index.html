@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Face Model</title>
+    <style>
+        body, html {
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="webgl-canvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script>
+        // Initialize scene, camera, and renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('webgl-canvas') });
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Load the 3D model of your face
+        const loader = new THREE.GLTFLoader();
+        loader.load('face.glb', function (gltf) {
+            const faceModel = gltf.scene;
+            scene.add(faceModel);
+            faceModel.scale.set(1, 1, 1); // Adjust scale if needed
+            faceModel.position.set(0, 0, 0); // Center the model
+
+            // Log the position of the model to the console
+            console.log('Face model position:', faceModel.position);
+
+            // Add lighting
+            const light = new THREE.AmbientLight(0x404040); // soft white light
+            scene.add(light);
+
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionalLight.position.set(1, 1, 1).normalize();
+            scene.add(directionalLight);
+
+        }, undefined, function (error) {
+            console.error('An error happened while loading the model.', error);
+        });
+
+        // Adjust camera position
+        camera.position.z = 5;
+
+        // Mouse movement
+        document.addEventListener('mousemove', (event) => {
+            const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+            const mouseY = - (event.clientY / window.innerHeight) * 2 + 1;
+
+            // Update camera or model based on mouse position
+            camera.rotation.y = mouseX * Math.PI / 4;
+            camera.rotation.x = mouseY * Math.PI / 4;
+        });
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Handle window resizing
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
+</html>
